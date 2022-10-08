@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet id="2" author="Mahendra">
+        <insert tableName="shopper">
+            <column name="shop_name" value="Mukteswar hub"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="shopper">
+            <column name="shop_name" value="Rajeswary mall"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="shopper">
+            <column name="shop_name" value="Kalavati Marts"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+
+        <insert tableName="location">
+            <column name="shopper_id" value="1"/>
+            <column name="address1" value="sashtree nagar"/>
+            <column name="address2" value="villa chackla"/>
+            <column name="postcode" value="321232" />
+            <column name="city" value="Gandhinagar" />
+            <column name="country" value="INDIA" />
+            <column name="contact_number" value="+91 9922989592" />
+            <column name="email" value="mukeshverma@gmail.com" />
+            <column name="latitude" value="52.439941" />
+            <column name="longitude" value="-0.9847631" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="location">
+            <column name="shopper_id" value="1"/>
+            <column name="address1" value="syam nagar"/>
+            <column name="address2" value="near ranip"/>
+            <column name="postcode" value="321232" />
+            <column name="city" value="Gandhinagar" />
+            <column name="country" value="INDIA" />
+            <column name="contact_number" value="+91 9922989592" />
+            <column name="email" value="mukeshverma@gmail.com" />
+            <column name="latitude" value="32.439941" />
+            <column name="longitude" value="-0.9847631" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="location">
+            <column name="shopper_id" value="2"/>
+            <column name="address1" value="Jay Mangal"/>
+            <column name="address2" value="near BRTS"/>
+            <column name="postcode" value="384265" />
+            <column name="city" value="Ahmedabad" />
+            <column name="country" value="INDIA" />
+            <column name="contact_number" value="+91 9922989593" />
+            <column name="email" value="rajeshsetty@gmail.com" />
+            <column name="latitude" value="51.439941" />
+            <column name="longitude" value="-0.9849631" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="location">
+            <column name="shopper_id" value="1"/>
+            <column name="address1" value="Pragati nagar"/>
+            <column name="address2" value="near Prgati stand"/>
+            <column name="postcode" value="384265" />
+            <column name="city" value="Ahmedabad" />
+            <column name="country" value="INDIA" />
+            <column name="contact_number" value="+91 9922989593" />
+            <column name="email" value="rajeshsetty@gmail.com" />
+            <column name="latitude" value="31.439941" />
+            <column name="longitude" value="-0.9849631" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="location">
+            <column name="shopper_id" value="3"/>
+            <column name="address1" value="Balaram road"/>
+            <column name="address2" value="near kozy hotel"/>
+            <column name="postcode" value="385657" />
+            <column name="city" value="Palanpur" />
+            <column name="country" value="INDIA" />
+            <column name="contact_number" value="+91 9922989454" />
+            <column name="email" value="kalpeshdabhi@gmail.com" />
+            <column name="latitude" value="35.439941" />
+            <column name="longitude" value="-0.8849636" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="location">
+            <column name="shopper_id" value="1"/>
+            <column name="address1" value="Krishna nagar"/>
+            <column name="address2" value="near Ring road"/>
+            <column name="postcode" value="385657" />
+            <column name="city" value="Palanpur" />
+            <column name="country" value="INDIA" />
+            <column name="contact_number" value="+91 9922989454" />
+            <column name="email" value="kalpeshdabhi@gmail.com" />
+            <column name="latitude" value="34.439941" />
+            <column name="longitude" value="-0.8849636" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="menu">
+            <column name="name" value="Morning Food"/>
+            <column name="shopper_id" value="1"/>
+            <column name="start_time" value="07:00 AM"/>
+            <column name="end_time" value="07:00 PM" />
+            <column name="status" value="ACTIVE" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="menu">
+            <column name="name" value="Average Morning"/>
+            <column name="shopper_id" value="1"/>
+            <column name="start_time" value="08:00 AM"/>
+            <column name="end_time" value="08:00 PM" />
+            <column name="status" value="ACTIVE" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="menu">
+            <column name="name" value="Morning Breakfast"/>
+            <column name="shopper_id" value="2"/>
+            <column name="start_time" value="10:00 AM"/>
+            <column name="end_time" value="10:00 PM" />
+            <column name="status" value="ACTIVE" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="menu">
+            <column name="name" value="Evening Choice"/>
+            <column name="shopper_id" value="2"/>
+            <column name="start_time" value="05:00 PM"/>
+            <column name="end_time" value="08:00 PM" />
+            <column name="status" value="ACTIVE" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="menu">
+            <column name="name" value="Dinner night"/>
+            <column name="shopper_id" value="3"/>
+            <column name="start_time" value="08:00 PM"/>
+            <column name="end_time" value="10:00 PM" />
+            <column name="status" value="ACTIVE" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="menu">
+            <column name="name" value="Morning fress foos"/>
+            <column name="shopper_id" value="3"/>
+            <column name="start_time" value="06:00 AM"/>
+            <column name="end_time" value="01:00 PM" />
+            <column name="status" value="INDIA" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="menu_item">
+            <column name="menu_id" value="1"/>
+            <column name="category" value="DRINK"/>
+            <column name="sub_category" value="Milk"/>
+            <column name="item_name" value="SOFT Milk" />
+            <column name="price" value="25.00" />
+            <column name="quantity" value="1" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="menu_item">
+            <column name="menu_id" value="1"/>
+            <column name="category" value="SNACK"/>
+            <column name="sub_category" value="Baked"/>
+            <column name="item_name" value="SOFT Bread Toss" />
+            <column name="price" value="35.00" />
+            <column name="quantity" value="1" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="menu_item">
+            <column name="menu_id" value="2"/>
+            <column name="category" value="DRINK"/>
+            <column name="sub_category" value="Tea&amp;coffee"/>
+            <column name="item_name" value="Craft boss coffee Black" />
+            <column name="price" value="151.00" />
+            <column name="quantity" value="1" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="menu_item">
+            <column name="menu_id" value="2"/>
+            <column name="category" value="Snacks&amp;Sweets"/>
+            <column name="sub_category" value="Gummies"/>
+            <column name="item_name" value="Fruits mix gummy" />
+            <column name="price" value="158.00" />
+            <column name="quantity" value="1" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="menu_item">
+            <column name="menu_id" value="3"/>
+            <column name="category" value="Daily Necessities"/>
+            <column name="sub_category" value="Laundry"/>
+            <column name="item_name" value="Washing tank and bathtub trash removal net" />
+            <column name="price" value="250.00" />
+            <column name="quantity" value="1" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="menu_item">
+            <column name="menu_id" value="4"/>
+            <column name="category" value="Sanitary Goods"/>
+            <column name="sub_category" value="Cold-cooked product"/>
+            <column name="item_name" value="3 cooling towels" />
+            <column name="price" value="800.00" />
+            <column name="quantity" value="1" />
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+        <insert tableName="menu_location">
+            <column name="menu_id" value="1"/>
+            <column name="location_id" value="1"/>
+        </insert>
+        <insert tableName="menu_location">
+            <column name="menu_id" value="2"/>
+            <column name="location_id" value="1"/>
+        </insert>
+        <insert tableName="menu_location">
+            <column name="menu_id" value="1"/>
+            <column name="location_id" value="2"/>
+        </insert>
+        <insert tableName="menu_location">
+            <column name="menu_id" value="2"/>
+            <column name="location_id" value="2"/>
+        </insert>
+        <insert tableName="menu_location">
+            <column name="menu_id" value="3"/>
+            <column name="location_id" value="3"/>
+        </insert>
+        <insert tableName="menu_location">
+            <column name="menu_id" value="4"/>
+            <column name="location_id" value="3"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

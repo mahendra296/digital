@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet id="2" author="Mahendra">
+        <insert tableName="consumer">
+            <column name="first_name" value="Mahendra"/>
+            <column name="last_name" value="Parmar"/>
+            <column name="mobile_number" value="918141662523"/>
+            <column name="address1" value="Plot Vistar"/>
+            <column name="address2" value="Jasali"/>
+            <column name="city" value="Deodar"/>
+            <column name="postcode" value="385338"/>
+            <column name="country" value="INDIA"/>
+            <column name="email" value="mahendra@gmail.com"/>
+            <column name="password" value="$2a$10$ZlUZU0B2UMHJMqP/bXQOAONuzQWAMNln5m18o2eVO1rKNAEAqFduK"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="address_type" value="HOME"/>
+            <column name="created_at" valueDate="now()"/>
+            <column name="updated_at" valueDate="now()"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

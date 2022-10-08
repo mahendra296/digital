@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet id="1" author="Mahendra">
+        <createTable tableName="consumer">
+            <column name="id" type="bigint unsigned" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="first_name" type="varchar(50)"/>
+            <column name="last_name" type="varchar(50)"/>
+            <column name="mobile_number" type="varchar(15)"/>
+            <column name="address1" type="varchar(255)"/>
+            <column name="address2" type="varchar(255)"/>
+            <column name="city" type="varchar(50)"/>
+            <column name="postcode" type="varchar(10)"/>
+            <column name="country" type="varchar(50)"/>
+            <column name="email" type="varchar(100)"/>
+            <column name="password" type="varchar(255)"/>
+            <column name="status" type="varchar(50)"/>
+            <column name="address_type" type="varchar(50)"/>
+            <column name="created_at" type="Timestamp" defaultValueComputed="CURRENT_TIMESTAMP"/>
+            <column name="updated_at" type="Timestamp"
+                    defaultValueComputed="CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"/>
+        </createTable>
+        <rollback>
+            <dropTable tableName="consumer"/>
+        </rollback>
+    </changeSet>
+</databaseChangeLog>
