@@ -29,8 +29,8 @@ class ConsumerLocationServiceTest {
         NavigationDTO<LocationDTO> pageListDTO = TestUtils.getNavigationListLocationDTOs();
 
         PageRequest pageRequest = PageRequest.of(1, 1, Sort.by(Sort.Direction.DESC,"id"));
-        when(shopperClient.getNearShopperLocationBySearchCriteria(TestUtils.getCustomerLocationDTO(),1,1)).thenReturn(pageListDTO);
-        NavigationDTO<LocationDTO>  result =  consumerLocationService.getNearShopperLocationBySearchCriteria(TestUtils.getCustomerLocationDTO(),pageRequest);
+        when(shopperClient.getNearShopperLocationBySearchCriteria(TestUtils.getConsumerLocationDTO(),1,1)).thenReturn(pageListDTO);
+        NavigationDTO<LocationDTO>  result =  consumerLocationService.getNearShopperLocationBySearchCriteria(TestUtils.getConsumerLocationDTO(),pageRequest);
         Assertions.assertEquals(1,result.getPageSize());
     }
 

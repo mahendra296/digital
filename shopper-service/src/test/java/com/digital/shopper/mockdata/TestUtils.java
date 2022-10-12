@@ -85,7 +85,7 @@ public class TestUtils {
                 .build());
     }
 
-    public static CriteriaDTO getCustomerLocationDTO() {
+    public static CriteriaDTO getConsumerLocationDTO() {
         return CriteriaDTO.builder()
                 .latitude(52.449942)
                 .longitude(-0.9957452)

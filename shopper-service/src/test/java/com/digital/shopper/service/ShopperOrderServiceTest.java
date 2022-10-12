@@ -31,19 +31,19 @@ class ShopperOrderServiceTest {
 
     /*@Test
     void getOrder() {
-        ConsumerOrderDTO customerOrderDTO = TestUtils.getOrderDTO();
-        when(shopperOrderService.getOrder(1L, 1L)).thenReturn(customerOrderDTO);
+        ConsumerOrderDTO consumerOrderDTO = TestUtils.getOrderDTO();
+        when(shopperOrderService.getOrder(1L, 1L)).thenReturn(consumerOrderDTO);
         ConsumerOrderDTO result = shopperOrderService.getOrder(1L, 1L);
-        Assertions.assertEquals(customerOrderDTO, result);
+        Assertions.assertEquals(consumerOrderDTO, result);
     }
 
     @Test
     void createOrder() {
-        OrderRequestDTO customerOrderRequestDTO = TestUtils.getOrderRequestDTO();
-        ConsumerOrderDTO customerOrderDTO = TestUtils.getOrderDTO();
+        OrderRequestDTO consumerOrderRequestDTO = TestUtils.getOrderRequestDTO();
+        ConsumerOrderDTO consumerOrderDTO = TestUtils.getOrderDTO();
         when(shopperRepository.findByIdAndStatus(anyLong(), ShopperStatus.ACTIVE)).thenReturn(any());
-        when(shopperOrderService.createOrder(customerOrderRequestDTO)).thenReturn(customerOrderDTO);
-        ConsumerOrderDTO result =  shopperOrderService.createOrder(customerOrderRequestDTO);
-        Assertions.assertEquals(customerOrderDTO, result);
+        when(shopperOrderService.createOrder(consumerOrderRequestDTO)).thenReturn(consumerOrderDTO);
+        ConsumerOrderDTO result =  shopperOrderService.createOrder(consumerOrderRequestDTO);
+        Assertions.assertEquals(consumerOrderDTO, result);
     }*/
 }

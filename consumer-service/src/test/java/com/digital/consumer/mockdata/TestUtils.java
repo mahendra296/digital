@@ -33,7 +33,7 @@ public class TestUtils {
         return navigationDTO;
     }
 
-    public static OrderRequestDTO getCustomerOrderRequestDTO() {
+    public static OrderRequestDTO getConsumerOrderRequestDTO() {
         return OrderRequestDTO.builder()
                 .consumerId(1L)
                 .shopperId(1L)
@@ -43,7 +43,7 @@ public class TestUtils {
                 .build();
     }
 
-    public static ConsumerOrderDTO getCustomerOrderDTO() {
+    public static ConsumerOrderDTO getConsumerOrderDTO() {
         return ConsumerOrderDTO.builder()
                 .id(1L)
                 .consumerId(1L)
@@ -68,7 +68,7 @@ public class TestUtils {
                 .build();
     }
 
-    public static CriteriaDTO getCustomerLocationDTO() {
+    public static CriteriaDTO getConsumerLocationDTO() {
         return CriteriaDTO.builder()
                 .latitude(52.449942)
                 .longitude(-0.9957452)
